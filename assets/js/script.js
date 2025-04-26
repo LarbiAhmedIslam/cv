@@ -25,14 +25,20 @@ function showGalleryImg(idx) {
 }
 
 function openGallery() {
-    galleryModal.classList.add('show');
+    galleryModal.classList.toggle('show');
     document.body.style.overflow = 'hidden';
     showGalleryImg(galleryCurrent);
 }
 
 function closeGallery() {
-    galleryModal.classList.remove('show');
+    galleryModal.classList.toggle('show');
     document.body.style.overflow = '';
+    const gallerySection = document.getElementById('adoptPetsGallerySection');
+    const openGalleryBtn = document.getElementById('openGalleryBtn');
+    if (gallerySection && openGalleryBtn) {
+        gallerySection.style.display = 'none';
+        openGalleryBtn.style.display = 'inline-block';
+    }
 }
 
 // Event listeners
@@ -74,6 +80,7 @@ window.addEventListener('keydown', (e) => {
 galleryModal.addEventListener('click', (e) => {
     if (e.target === galleryModal) {
         closeGallery();
+        
     }
 });
 

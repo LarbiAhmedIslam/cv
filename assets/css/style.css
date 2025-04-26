@@ -1463,3 +1463,8 @@ img.lazy-loaded {
     font-weight: var(--font-medium);
     opacity: 0.8;
 }
+
+
+.hide{
+    display: none;
+}

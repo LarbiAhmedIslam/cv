@@ -115,12 +115,12 @@
                     <h3>Adopt-Pets</h3>
                     <p>Application Web pour adoption d'animaux.</p>
                     <button class="gallery-btn" id="openGalleryBtn" type="button">Voir les captures d'écran</button>
+
                 </div>
             </div>
 
             <!--=============== GALLERY ADOPT-PETS ===============-->
-            <div class="adopt-pets-gallery-section">
-                <h2 class="section__title">Captures d'écran — Adopt-Pets</h2>
+            <div class="adopt-pets-gallery-section" style="display: none;" id="adoptPetsGallerySection">
                 <div class="gallery-grid" id="adoptPetsGalleryGrid">
                     <img class="gallery-thumb" src="assets/img-AdoptWebsite/1.png" alt="Interface principale" data-full="assets/img-AdoptWebsite/1.png" data-caption="Interface principale">
                     <img class="gallery-thumb" src="assets/img-AdoptWebsite/2.png" alt="Page de détails" data-full="assets/img-AdoptWebsite/2.png" data-caption="Page de détails">
@@ -246,5 +246,25 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--=============== MAIN JS ===============-->
     <script src="/assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openGalleryBtn = document.getElementById('openGalleryBtn');
+            const gallerySection = document.getElementById('adoptPetsGallerySection');
+            // Afficher la galerie au clic sur le bouton
+            if (openGalleryBtn && gallerySection) {
+                openGalleryBtn.addEventListener('click', function() {
+                    gallerySection.style.display = 'block';
+                    openGalleryBtn.style.display = 'none';
+                });
+            }
+            // Fermer la galerie quand on ferme la lightbox (délégation d'événement)
+            document.addEventListener('click', function(e) {
+                if (e.target && e.target.id === 'galleryLightboxClose') {
+                    gallerySection.style.display = 'none';
+                    openGalleryBtn.style.display = 'inline-block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
