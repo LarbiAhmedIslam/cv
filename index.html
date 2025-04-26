@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Larbi Ahmed Islam</title>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--=============== BOXICONS ===============-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--=============== GOOGLE FONTS ===============-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Larbi Ahmed Islam</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Accueil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Expériences</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">Bonjour, je suis <br> Larbi Ahmed Islam</h1>
+                    <h3 class="home__subtitle">Développeur Front-End</h3>
+                    <div class="home__buttons">
+                        <a href="/assets/pdf/cv.pdf" class="button" download>Telecharger le CV</a>
+                        <a href="#about" class="button button--ghost">À propos</a>
+                    </div>
+                </div>
+                <div class="home__img">
+                    <img src="assets/img/Ahmed.jpeg" alt="Photo de profil">
+                </div>
+            </div>
+        </section>
+        
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Compétences techniques</h2>
+            <div class="skills__container container grid">
+                <div class="skills__card"><h3 class="skills__name">HTML</h3></div>
+                <div class="skills__card"><h3 class="skills__name">CSS</h3></div>
+                <div class="skills__card"><h3 class="skills__name">JavaScript</h3></div>
+                <div class="skills__card"><h3 class="skills__name">React.js</h3></div>
+                <div class="skills__card"><h3 class="skills__name">Tailwind CSS</h3></div>
+                <div class="skills__card"><h3 class="skills__name">PHP</h3></div>
+                <div class="skills__card"><h3 class="skills__name">UI/UX Design</h3></div>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <h2 class="section__title">À propos de moi</h2>
+            <div class="about__container container grid">
+                <img src="assets/img/Ahmed.jpeg" alt="Photo" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        Développeur Front-End créatif et motivé, étudiant en 3ᵉ année Informatique. Je contribue à une plateforme web startup avec React.js, Tailwind CSS et JavaScript, en concevant des interfaces modernes et responsives. Mes projets m'ont permis de renforcer mes compétences en UI/UX et en intégration front-end.
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Années <br> d'études</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">10+</span>
+                            <span class="about__info-name">Projets <br> réalisés</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">Startup</span>
+                            <span class="about__info-name">Projet en cours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <h2 class="section__title">Expériences Professionnelles</h2>
+            <div class="work__container container grid">
+                <div class="work__card">
+                    <h3 class="work__title">Projet Startup — Plateforme Web</h3>
+                    <p class="work__desc">Conception du design et réalisation de l'interface front-end d'une plateforme innovante e-commerce. Collaboration avec une équipe, accent sur l'UX et la performance. Stack : React.js, Tailwind CSS, HTML, CSS, JavaScript.</p>
+                </div>
+                <div class="work__card">
+                    <h3 class="work__title">Graphic Designer — Freelance</h3>
+                    <p class="work__desc">Conception et réalisation de logos et identités visuelles pour divers clients. Projets graphiques variés, gestion complète de la conception à la livraison finale.</p>
+                </div>
+                <div class="work__card">
+                    <h3 class="work__title">Membre du Club CODIN (Designer)</h3>
+                    <p class="work__desc">Participation à la vie du club universitaire (identité visuelle, publications réseaux sociaux, organisation d'événements, enseignement en design graphique).</p>
+                </div>
+                <div class="work__card adopt-pets-card" id="adoptPetsCard">
+                    <h3>Adopt-Pets</h3>
+                    <p>Application Web pour adoption d'animaux.</p>
+                    <button class="gallery-btn" id="openGalleryBtn" type="button">Voir les captures d'écran</button>
+                </div>
+            </div>
+
+            <!--=============== GALLERY ADOPT-PETS ===============-->
+            <div class="adopt-pets-gallery-section">
+                <h2 class="section__title">Captures d'écran — Adopt-Pets</h2>
+                <div class="gallery-grid" id="adoptPetsGalleryGrid">
+                    <img class="gallery-thumb" src="assets/img-AdoptWebsite/1.png" alt="Interface principale" data-full="assets/img-AdoptWebsite/1.png" data-caption="Interface principale">
+                    <img class="gallery-thumb" src="assets/img-AdoptWebsite/2.png" alt="Page de détails" data-full="assets/img-AdoptWebsite/2.png" data-caption="Page de détails">
+                    <img class="gallery-thumb" src="assets/img-AdoptWebsite/3.png" alt="Formulaire d'adoption" data-full="assets/img-AdoptWebsite/3.png" data-caption="Formulaire d'adoption">
+                    <img class="gallery-thumb" src="assets/img-AdoptWebsite/4.png" alt="Tableau de bord" data-full="assets/img-AdoptWebsite/4.png" data-caption="Tableau de bord">
+                </div>
+                <!-- Lightbox -->
+                <div id="galleryLightbox" class="gallery-lightbox">
+                    <span class="gallery-lightbox-close" id="galleryLightboxClose">&times;</span>
+                    <img class="gallery-lightbox-img" id="galleryLightboxImg" src="#" alt="">
+                    <div class="gallery-lightbox-caption" id="galleryLightboxCaption"></div>
+                    <span class="gallery-lightbox-prev" id="galleryLightboxPrev">&#10094;</span>
+                    <span class="gallery-lightbox-next" id="galleryLightboxNext">&#10095;</span>
+                </div>
+            </div>
+            <div id="galleryModal" class="gallery-modal">
+                <span class="close-gallery-modal" id="closeGalleryModal">&times;</span>
+                <img class="gallery-modal-img" id="galleryModalImg" src="#" alt="">
+                <span class="gallery-modal-prev" id="galleryModalPrev">&#10094;</span>
+                <span class="gallery-modal-next" id="galleryModalNext">&#10095;</span>
+            </div>
+        </section>
+
+        <!--=============== FORMATION ===============-->
+        <section class="about section" id="formation">
+            <h2 class="section__title">Formation Académique</h2>
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h3 class="font-semibold">Abdelhamid Ibn Badis University</h3>
+                    <span class="text-xs text-gray-500">Licence en Informatique, Systèmes Informatiques — 2022 - En cours</span>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== CERTIFICATIONS ===============-->
+        <section class="skills section" id="certifications">
+            <h2 class="section__title">Certifications</h2>
+            <div class="skills__container container grid">
+                <div class="skills__card"><h4 class="skills__name">React Advanced Concepts</h4><span class="text-xs">Udacity — May 2020</span></div>
+                <div class="skills__card"><h4 class="skills__name">Cisco Certified Network Associate</h4><span class="text-xs">Cisco — Apr 2025</span></div>
+            </div>
+        </section>
+
+        <!--=============== LANGUAGES ===============-->
+        <section class="skills section" id="languages">
+            <h2 class="section__title">Langues</h2>
+            <div class="skills__container container grid">
+                <div class="skills__card"><span class="skills__name">Arabe</span><br><span class="text-xs">Natif</span></div>
+                <div class="skills__card"><span class="skills__name">Français</span><br><span class="text-xs">Intermédiaire (TCF B2)</span></div>
+                <div class="skills__card"><span class="skills__name">Anglais</span><br><span class="text-xs">Intermédiaire</span></div>
+            </div>
+        </section>
+
+        <!--=============== À PROPOS DE LA CERTIF CISCO ===============-->
+        <section class="about section" id="about-ccna">
+            <h2 class="section__title">À propos de la certification Cisco</h2>
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <p class="about__description">J'ai obtenu la certification <span class="font-semibold">CCNA: Switching, Routing, and Wireless Essentials</span> de Cisco en février 2025. Cette formation m'a permis d'acquérir des compétences solides en <span class="font-semibold">câblage réseau, configuration de routeurs et switches</span>, ainsi qu'en <span class="font-semibold">routage, commutation et réseaux sans fil</span>. Elle m'a également permis de développer une bonne maîtrise des bases du <span class="font-semibold">dépannage réseau</span> et de la <span class="font-semibold">sécurité informatique</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== CONTACT MODERNE ===============-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contactez-moi</h2>
+            <p class="section__subtitle">Disponible pour des opportunités</p>
+            <div class="contact-modern-container">
+                <div class="contact-modern-info">
+                    <div class="contact-modern-item">
+                        <span class="contact-modern-icon"><i class="bx bx-phone"></i></span>
+                        <div>
+                            <div class="contact-modern-label">Téléphone</div>
+                            <div class="contact-modern-value"><a href="tel:+213775674958">+213 7 75 67 49 58</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-modern-item">
+                        <span class="contact-modern-icon"><i class="bx bx-envelope"></i></span>
+                        <div>
+                            <div class="contact-modern-label">Email</div>
+                            <div class="contact-modern-value"><a href="mailto:larbiahmedislam@gmail.com">larbiahmedislam@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-modern-item">
+                        <span class="contact-modern-icon"><i class="bx bx-map"></i></span>
+                        <div>
+                            <div class="contact-modern-label">Localisation</div>
+                            <div class="contact-modern-value">Mostaganem – Algeria</div>
+                        </div>
+                    </div>
+                    <div class="contact-modern-socials">
+                        <a href="https://linkedin.com/in/ahmed-islam-larbi-6847672a8" class="contact-social-btn" target="_blank" title="LinkedIn">
+                            <i class="bx bxl-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/LarbiAhmedIslam" class="contact-social-btn" target="_blank" title="GitHub">
+                            <i class="bx bxl-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-modern-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Nom" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <input type="text" placeholder="Sujet" required>
+                    <textarea rows="5" placeholder="Message" required></textarea>
+                    <button type="submit" class="contact-modern-btn">Envoyer le message <i class="bx bx-send"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy"> 2025 Larbi Ahmed Islam. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
